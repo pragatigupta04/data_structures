@@ -1,0 +1,10 @@
+List of Topics
+1. Arrays In Python
+2. Queues In Python
+3. Stacks In Python
+4. Linked Lists In Python
+5. Circular Linked Lists In Python
+6. Trees In Python
+7. Graphs In Python
+8. Hash Tables In Python
+
