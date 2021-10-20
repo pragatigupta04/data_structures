@@ -43,5 +43,21 @@ def reverseALinkedList():
     print("reversed linked list - ")
     printLinkedList(head)
     
+def reverseALinkedListRecursive(head, current, prev):
+    if not current:
+        head = prev
+        print("reversed linked list - ")
+        printLinkedList(head)
+        return
+    current_next = current.next
+    if current.next == head:
+        current.next = None
+    else:
+        current.next = prev
+    prev = current
+    reverseALinkedListRecursive(head, current_next, prev)
+    
 if __name__ == "__main__":
     reverseALinkedList()
+    head = createALinkedList()
+    reverseALinkedListRecursive(head, head, None)
